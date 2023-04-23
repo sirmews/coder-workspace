@@ -10,7 +10,8 @@ ENV CODER_TELEMETRY_INSTALL_SOURCE=railway.app
 
 # Install nodejs as root
 USER root
-RUN apt-get update && apt-get install -y nodejs
+RUN apk update && \
+    apk add nodejs npm
 
 # Switch back to the default user
 USER coder
