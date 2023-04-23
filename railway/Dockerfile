@@ -1,4 +1,4 @@
-FROM ghcr.io/coder/coder:v0.22.2
+FROM ghcr.io/coder/coder:latest
 ENV PORT=3000
 ENV CODER_HTTP_ADDRESS=0.0.0.0:$PORT
 ARG RAILWAY_STATIC_URL=
