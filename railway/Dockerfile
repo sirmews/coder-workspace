@@ -10,8 +10,7 @@ ENV CODER_TELEMETRY_INSTALL_SOURCE=railway.app
 
 # Install nodejs as root
 USER root
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-RUN sudo apt-get install -y nodejs
+RUN apt-get update && apt-get install -y nodejs
 
 # Switch back to the default user
 USER coder
