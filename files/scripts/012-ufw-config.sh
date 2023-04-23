@@ -9,5 +9,7 @@ ufw allow 80/tcp
 
 # Disable external access to PostgresSQL
 ufw deny 5432
+# Disable ICMP
+ufw deny icmp
 
 ufw --force enable
